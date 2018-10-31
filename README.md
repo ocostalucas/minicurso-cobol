@@ -1,6 +1,6 @@
 # Minicurso de Programação COBOL
 
-![58b94ab0-b6e7-11e4-8e5d-a5f2740870fd](https://user-images.githubusercontent.com/35963197/47437840-bb6b7400-d77f-11e8-803f-fc306c041b7c.png "Grace Hopper ensinando COBOL!")
+![58b94ab0-b6e7-11e4-8e5d-a5f2740870fd](https://user-images.githubusercontent.com/35963197/47437840-bb6b7400-d77f-11e8-803f-fc306c041b7c.png "Grace Hopper ensinando COBOL")
 
 ## Sumário
 > * [Introdução](#introducao)
@@ -25,7 +25,7 @@
 
 
 ## Introdução
-Este repositório tem como objetivo reunir códigos e conceitos básicos da linguagem de programação COBOL (COmmon Bussines Oriented Language), que será ministrada como minicurso na 2ª Edição do FlashCLIP. 
+Este repositório tem como objetivo reunir códigos e conceitos básicos da linguagem de programação COBOL (COmmon Bussines Oriented Language), que ~~será~~ foi ministrado 27 de outubro de 2018 como minicurso na 2ª edição do FlashCLIP. 
 
 ##### Palestrantes: 
 - [Lucas Costa](https://github.com/olucascosta)
@@ -62,7 +62,7 @@ PROCEDURE DIVISION. (divisão de procedimentos)
 ```
 #### IDENTIFICATION DIVISION
 
-É a divisão de identificação do programana na qual se fornece informações sobre o programa, tais como nome do programa, autor, comentários do autor e informações de uso para o usuário final. Essa divisão não possui seções. Esta divisão possui a seguinte estrutura:
+É a divisão de identificação do programa na qual se fornece informações sobre o programa, tais como nome do programa, autor, comentários do autor e informações de uso para o usuário final. Essa divisão não possui seções. Esta divisão possui a seguinte estrutura:
 
 ```cobol
 IDENTIFICATION DIVISION.
@@ -248,7 +248,7 @@ São literais geradas pelo compilador e usados como palavras reservadas. Algumas
 
 A condição de classe é usada para testes onde se deseja saber se uma variável é formada ou não de um tipo particular de dados.
 
-**NUMERIC** Numerico, caracteres de 0 a 9.  
+**NUMERIC** Numérico, caracteres de 0 a 9.  
 **ALPHABETIC** Alfabético, caracteres de A - Z, de a – z e espaços.  
 **ALPHABETIC-UPPER** Alfabético, caracteres de A - Z, e espaços.  
 **ALPHABETIC-LOWER** Alfabético, caracteres de a - z, e espaços.
@@ -321,7 +321,7 @@ SUBTRACT [nome-de-dado-1], [nome-de-dado-2] FROM [nome-de-dado-n-1] GIVING (nome
 ```
 
 Regras:
-- No comando **SUBTRACT** os nome-de-dados que precedem **FROM** são somados e esta soma é subtraida do nome-de-dado que sucede **FROM**;
+- No comando **SUBTRACT** os nome-de-dados que precedem **FROM** são somados e esta soma é subtraída do nome-de-dado que sucede **FROM**;
 
 - O resultado será armazenado em nome-de-dado-n se houver **GIVING** e, em nome-de-dado-m se houver.
 
@@ -416,7 +416,7 @@ O operadores são: '+' para adição, '-' para subtração,'*' para multiplicaç
 
 Sintaxe:  
 ```cobol
-COMPUTE [nome-de-dado-1] = nome-de-dado-2 [simbolos] nome-de-dado-n
+COMPUTE [nome-de-dado-1] = nome-de-dado-2 [símbolos] nome-de-dado-n
 ```
 
 Exemplos:
@@ -456,10 +456,10 @@ ELSE
     <sentença>.
 END-IF.
 ```   
-Lembrando que, em COBOL:   
-1 – Todo “IF” precisa ter um “END-IF”.
-2 – Um “IF” não precisa ter um “ELSE”.
-3 – Um “ELSE” vale pro último “IF” sem “ELSE” dentro de um “END-IF” dentro do ninho.
+Lembrando que, em COBOL:    
+1 – Todo “IF” precisa ter um “END-IF”.    
+2 – Um “IF” não precisa ter um “ELSE”.    
+3 – Um “ELSE” vale pro último “IF” sem “ELSE” dentro de um “END-IF” dentro do ninho.    
 
 #### Operadores relacionais
 
@@ -539,7 +539,6 @@ B.
     DISPLAY I.
 ```
 #### PERFORM TIMES
-
 Nessa estrutura o paragrafo será executado “n” vezes.
 
 ```cobol
