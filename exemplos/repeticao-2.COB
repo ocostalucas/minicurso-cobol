@@ -1,0 +1,13 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. REPETICAO002.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+           77 I PIC 9(2) VALUE 1.
+       PROCEDURE DIVISION.
+       MAIN.
+           PERFORM A UNTIL I=10.
+       A.
+           DISPLAY I
+           ADD 1 TO I.
+       END PROGRAM REPETICAO002.
